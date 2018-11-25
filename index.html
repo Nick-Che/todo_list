@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<title>ToDO List</title>
+</head>
+<body>
+<div class="main">
+	<div class="container">
+		<span class="title">ToDo List</span>
+		<form autocomplete="off">	
+			<div class="input-box">
+				<input type="text" id="my-input" placeholder="Title...">
+				<input type="date" id="endDate" style="padding: 10px 5px" name="trip-start" value="2018-01-01" min="2018-01-01" max="2099-01-01" required>
+				<input type="button" id="btn" onclick="newElement()" class="addBtn" value="Add">	 
+				<input type="button" id="delbtn" onclick="deleteAllElements()" class="delBtn" value="Delete All">	  			
+			</div>
+		</form>
+	</div>
+	<div class="action-list">
+		<ul id="myUL">
+		<li>Click on the task to mark as completed <span class="end-date">2018-01-01</span></li>
+		<li class="checked">Click on the task to mark as completed<span class="end-date">2018-01-01</span></li>
+		</ul>
+	</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
